@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/page",
+      "handler": "Element.get",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/element",
+      "handler": "Element.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/element/:_id",
+      "handler": "Element.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/element/name/:name",
+      "handler": "Element.findOneByName",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/element",
+      "handler": "Element.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/element/:_id",
+      "handler": "Element.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/element/:_id",
+      "handler": "Element.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

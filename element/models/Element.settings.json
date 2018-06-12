@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "element",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "json"
+    },
+    "parent": {
+      "collection": "element",
+      "via": "children",
+      "dominant": true
+    },
+    "children": {
+      "collection": "element",
+      "via": "parent"
+    }
+  }
+}
